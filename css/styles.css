@@ -10,7 +10,7 @@
     --color-4: #FFF1F4;
 }
 
-/* Inicio del diseño de la barra de navegacion*/
+/* Inicio del diseño de la barra de navegacion */
 header{
     position: fixed;
     width: 100%;
@@ -84,10 +84,10 @@ header .menu button:hover{
     color: var(--color-1);
     cursor: pointer;
 }
-/* Fin del diseño de la barra de navegacion*/
+/* Fin del diseño de la barra de 'navegacion' */
 
 
-/* Inicio del diseño del contenido inicial*/
+/* Inicio del diseño del contenido 'inicial' */
 .inicio{
     padding: 120px 5%;
     padding-bottom: 0;
@@ -96,14 +96,14 @@ header .menu button:hover{
     padding-right: 0;
 }
 
-.contenido h2{
+.container-1 h2{
     font-family: var(--font-1);
     font-size: 60px;
     font-weight: 480;
     margin-bottom: 0px;
 }
 
-.contenido h1{
+.container-1 h1{
     font-family: var(--font-1);
     color: var(--color-1);
     font-size: 70px;
@@ -112,14 +112,14 @@ header .menu button:hover{
     margin-bottom: 0;
 }
 
-.contenido p{
+.container-1 p{
     font-family: var(--font-1);
     font-size: 20px;
     color: var(--color-3);
     margin-top: 10px;
 }
 
-.contenido .download{
+.container-1 .download{
     background: var(--color-1);
     font-size: 20px;
     font-weight: 450;
@@ -133,7 +133,7 @@ header .menu button:hover{
     transition: background-color 1s, color 1s;
 }
 
-.contenido .download:hover{
+.container-1 .download:hover{
     background-color: var(--color-2);
     color: var(--color-1);
     cursor: pointer;
@@ -145,10 +145,10 @@ header .menu button:hover{
     margin-left: 50px;
     margin-right: 0;
 }
-/* Fin del diseño de contenido inicial*/
+/* Fin del diseño de contenido 'inicial' */
 
 
-/* Inicio del diseño de la seccion 'about'*/
+/* Inicio del diseño de la seccion 'about' */
 .about{
     background-color: var(--color-4);
     display: flex;
@@ -179,25 +179,34 @@ header .menu button:hover{
     font-size: 22px;
     padding-bottom: 30px;
 }
-/* Inicio del diseño de la seccion 'about'*/
+/* Inicio del diseño de la seccion 'about' */
 
 
-/* Inicio del diseño de la seccion 'skills'*/
+/* Inicio del diseño de la seccion 'skills' */
 #skills h1{
     display: flex;
     justify-content: center;
-    font-family: var(--font-1);
-    font-size: 35px;
-    font-weight: 500;
     color: var(--color-1);
-    padding-top: 40px;
-    padding-bottom: 30px;
+    font-family: var(--font-1);
+    font-size: 18px;
+    font-weight: 450;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+#skills h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: var(--font-1);
+    font-size: 32px;
+    font-weight: 550;
+    margin-bottom: 50px;
 }
 
 .skills-fila{
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
 }
 
 .skills-fila-izq, .skills-fila-med{
@@ -205,7 +214,16 @@ header .menu button:hover{
     padding-bottom: 10px;
 }
 
-.skills-fila-izq-text h2{
+.skills-fila-izq-text h3{
+    font-family: var(--font-1);
+    color: var(--color-3);
+    font-size: 25px;
+    font-weight: 450;
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+.skills-fila-med-text h3{
     font-family: var(--font-1);
     color: var(--color-3);
     font-size: 25px;
@@ -213,25 +231,17 @@ header .menu button:hover{
     margin-top: 10px;
 }
 
-.skills-fila-med-text h2{
+.skills-fila-der-text h3{
     font-family: var(--font-1);
     color: var(--color-3);
     font-size: 25px;
     font-weight: 450;
     margin-top: 10px;
 }
-
-.skills-fila-der-text h2{
-    font-family: var(--font-1);
-    color: var(--color-3);
-    font-size: 25px;
-    font-weight: 450;
-    margin-top: 10px;
-}
-/* Fin del diseño de la seccion 'skills'*/
+/* Fin del diseño de la seccion 'skills' */
 
 
-/* Inicio del diseño de la seccion 'services'*/
+/* Inicio del diseño de la seccion 'services' */
 .services{
     background-color: var(--color-4);
 }
@@ -246,11 +256,11 @@ header .menu button:hover{
     color: var(--color-1);
     margin-bottom: 40px;
 }
-.contenido{
+.container-3{
     padding-bottom: 80px;
 }
 
-.contenido .service-1{
+.container-3 .service-1{
     margin-left: 470px;
     width: 250px;
     padding: 10px 30px;
@@ -259,18 +269,102 @@ header .menu button:hover{
     border-radius: 5px;
 }
 
-.contenido .service-1 h2{
+.container-3 .service-1 h2{
     font-family: var(--font-1);
     font-size: 23px;
 }
 
-.contenido .service-1 p{
+.container-3 .service-1 p{
     font-family: var(--font-1);
     color: var(--color-3);
     font-size: 18px;
 }
+/* Fin del diseño de la seccion 'services' */
 
-.services .expand{
+
+/* Inicio del diseño de la seccion 'projects' */
+.projects h1{
+    display: flex;
+    justify-content: center;
+    color: var(--color-1);
+    font-family: var(--font-1);
+    font-size: 18px;
+    font-weight: 450;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.projects h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-family: var(--font-1);
+    font-weight: 550;
+}
+
+.cont-projects{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.cont-projects .project-1{
+    width: 500px;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 var(--color-2);
+    border-radius: 5px;
+}
+
+.cont-projects .project-1 img{
+    margin-top: 15px;
+    width: 500px;
+    height: 250px;
+}
+
+.cont-projects .project-1 h1{
+    justify-content: left;
+    margin-top: 15px;
+    color: black;
+    font-weight: 550;
+}
+
+.cont-projects .project-1 p{
+    font-family: var(--font-1);
+    font-size: 12px;
+    font-weight: 450;
+}
+
+.cont-projects .project-2{
+    margin-left: 70px;
+    width: 500px;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 var(--color-2);
+    border-radius: 5px;
+}
+
+.cont-projects .project-2 img{
+    margin-top: 15px;
+    width: 500px;
+    height: 250px;
+}
+
+.cont-projects .project-2 h1{
+    justify-content: left;
+    margin-top: 15px;
+    color: black;
+    font-weight: 550;
+}
+
+.cont-projects .project-2 p{
+    font-family: var(--font-1);
+    font-size: 12px;
+    font-weight: 450;
+}
+
+.projects .expand{
     background: var(--color-1);
     font-size: 18px;
     font-weight: 450;
@@ -280,17 +374,18 @@ header .menu button:hover{
     padding: 15px 25px;
     border-radius: 5px;
     margin-right: 30px;
-    margin-top: 60px;
+    margin-bottom: 80px;
     margin-left: 580px;
     transition: background-color 1s, color 1s;
 
 }
 
-.services .expand:hover{
+.projects .expand:hover{
     background-color: var(--color-2);
     color: var(--color-1);
     cursor: pointer;
 }
+/* Fin del diseño de la seccion 'projects' */
 
 
-
+/* Inicio del diseño de la seccion 'contact' */
