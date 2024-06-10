@@ -7,6 +7,7 @@
     --color-1: #9B0623;
     --color-2: #D9A0AF;
     --color-3: #575757;
+    --color-4: #FFF1F4;
 }
 
 /* Inicio del diseño de la barra de navegacion*/
@@ -149,7 +150,7 @@ header .menu button:hover{
 
 /* Inicio del diseño de la seccion 'about'*/
 .about{
-    background-color: #FFF1F4;
+    background-color: var(--color-4);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,8 +228,69 @@ header .menu button:hover{
     font-weight: 450;
     margin-top: 10px;
 }
-
 /* Fin del diseño de la seccion 'skills'*/
+
+
+/* Inicio del diseño de la seccion 'services'*/
+.services{
+    background-color: var(--color-4);
+}
+
+.services h1{
+    font-family: var(--font-1);
+    font-size: 35px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    color: var(--color-1);
+    margin-bottom: 40px;
+}
+.contenido{
+    padding-bottom: 80px;
+}
+
+.contenido .service-1{
+    margin-left: 470px;
+    width: 250px;
+    padding: 10px 30px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 var(--color-2);
+    border-radius: 5px;
+}
+
+.contenido .service-1 h2{
+    font-family: var(--font-1);
+    font-size: 23px;
+}
+
+.contenido .service-1 p{
+    font-family: var(--font-1);
+    color: var(--color-3);
+    font-size: 18px;
+}
+
+.services .expand{
+    background: var(--color-1);
+    font-size: 18px;
+    font-weight: 450;
+    border: 1px;
+    color: white;
+    font-family: var(--font-1);
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-left: 580px;
+    transition: background-color 1s, color 1s;
+
+}
+
+.services .expand:hover{
+    background-color: var(--color-2);
+    color: var(--color-1);
+    cursor: pointer;
+}
 
 
 
