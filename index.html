@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/da8bbfe9f4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Inicio del Header -->
     <header>
         <img src="img/Logo.jpg" alt="" class="logo">
-        <i class="bi bi-list" id="menu-icon"></i>
+        <i class="bi bi-list" id="menu-icon" onclick="responsiveMenu"></i>
 
         <nav class="menu">
             <a href="#inicio">Inicio</a>
@@ -26,170 +27,197 @@
     </header>
     <!-- Fin del Header -->
 
-    <!-- Inicio del Section-Inicio -->
-    <section class="inicio" id="inicio">
-        <div class="container-1">
-            <h2>Hola! Yo soy</h2>
-            <h1>Abril Funez</h1>
-            <p>Soy estudiante de Ingenieria en Sistemas y ademas tengo un emprendimiento de artesanias, el cual lo forme hace 4 años.</p>
-            <button class="download">Descargar CV</button>
-        </div>
-        
-        <img src="img/Yo.jpg" alt="">
-
-    </section>
-    <!-- Fin del Section-Inicio -->
-
-
-    <!-- Inicio del Section-Acerca de mi -->
-    <section class="about" id="about">
-        <p class="titulo1">Acerca de</p>
-        <h1>Quien soy</h1>
-        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, laudantium? Aut tempore, nemo sed exercitationem sapiente earum iusto repellendus architecto est quasi, ratione ad perferendis neque nam incidunt! Consectetur, beatae?</p>
-
-    </section>
-    <!-- Fin del Section-Acerca de mi -->
-
-
-    <!-- Inicio del Section-Habilidades -->
-    <section id="skills">
-        <h1>Habilidades</h1>
-        <h2>Que dispongo</h2>
-        <div class="container-2">
-            <!-- Inicio Fila 1-->
-            <div class="skills-fila">
-                <div class="skills-fila-izq">
-                    <div class="skills-fila-izq-img">
-                        <img src="img/Excel-icono.png" alt="">
-                    </div>
-
-                    <div class="skills-fila-izq-text">
-                        <h3>Excel</h3>
-                    </div>
-                </div>
-
-                <div class="skills-fila-med">
-                    <div class="skills-fila-med-img">
-                        <img src="img/Python-icono.png" alt="">
-                    </div>
-
-                    <div class="skills-fila-med-text">
-                        <h3>Python</h3>
-                    </div>
-                </div>
-
-                <div class="skills-fila-der">
-                    <div class="skills-fila-der-img">
-                        <img src="img/Html-icono.png" alt="">
-                    </div>
-    
-                    <div class="skills-fila-der-text">
-                        <h3>Html</h3>
-                    </div>
-                </div>
+    <main>
+        <!-- Inicio del Section-Inicio -->
+        <section class="inicio" id="inicio">
+            <div class="container-1">
+                <h2>Hola! Yo soy</h2>
+                <h1>Abril Funez</h1>
+                <p>Soy estudiante de Ingenieria en Sistemas y ademas tengo un emprendimiento de artesanias, el cual lo forme hace 4 años.</p>
+                <button class="download">Descargar CV</button>
             </div>
-            <!-- Fin Fila 1-->
+            
+            <img src="img/Yo.jpg" alt="">
 
-            <!-- Inicio Fila 2-->
-            <div class="skills-fila">
-                <div class="skills-fila-izq">
-                    <div class="skills-fila-izq-img">
-                        <img src="img/Css-icono.png" alt="">
-                    </div>
+        </section>
+        <!-- Fin del Section-Inicio -->
+
         
-                    <div class="skills-fila-izq-text">
-                        <h3>CSS</h3>
+        <!-- Inicio del Section-Acerca de mi -->
+        <section class="about" id="about">
+            <p class="titulo1">Acerca de</p>
+            <h1>Quien soy</h1>
+
+            <p class="info">Me llamo Abril, soy de San Luis-Capital, me mude a Cordoba hace 4 años por cuestiones de estudio, actualmente estudio la carrera de Ing. en Sistemas en la UTN-FRC, en la cual ingrese hace 2 años. Ademas, como especifique en el inicio, tengo un emprendimiento de accesorios(artesanias) de hilo encerado, el cual lo vengo desempeñando hace 4 años.<br>
+            Me gusta el crecimiento personal, lo cual busco constantemente aprender cosas nuevas. Me egrese del colegio con "Bachiller en Informatica", hice un curso de "Fundamentos de Prog. y Bases de Datos". <br> Por otro lado, fuera del ambiente de la Informatica, hice tambien un curso de "Barberia y Peluqueria Masc.".</p>
+
+        </section>
+        <!-- Fin del Section-Acerca de mi -->
+
+
+        <!-- Inicio del Section-Habilidades -->
+        <section class="skills" id="skills">
+            <h1>Habilidades</h1>
+            <h2>Que dispongo</h2>
+            <div class="container-2">
+                <!-- Inicio Fila 1-->
+                <div class="skills-fila">
+                    <div class="skills-fila-izq">
+                        <div class="skills-fila-izq-img">
+                            <img src="img/Excel-icono.png" alt="">
+                        </div>
+
+                        <div class="skills-fila-izq-text">
+                            <h3>Excel</h3>
+                        </div>
+                    </div>
+
+                    <div class="skills-fila-med">
+                        <div class="skills-fila-med-img">
+                            <img src="img/Python-icono.png" alt="">
+                        </div>
+
+                        <div class="skills-fila-med-text">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+
+                    <div class="skills-fila-der">
+                        <div class="skills-fila-der-img">
+                            <img src="img/Html-icono.png" alt="">
+                        </div>
+        
+                        <div class="skills-fila-der-text">
+                            <h3>Html</h3>
+                        </div>
                     </div>
                 </div>
+                <!-- Fin Fila 1-->
 
-                <div class="skills-fila-med">
-                    <div class="skills-fila-med-img">
-                        <img src="img/Java-icono.png" alt="">
+                <!-- Inicio Fila 2-->
+                <div class="skills-fila">
+                    <div class="skills-fila-izq">
+                        <div class="skills-fila-izq-img">
+                            <img src="img/Css-icono.png" alt="">
+                        </div>
+            
+                        <div class="skills-fila-izq-text">
+                            <h3>CSS</h3>
+                        </div>
                     </div>
-        
-                    <div class="skills-fila-med-text">
-                        <h3>Java</h3>
+
+                    <div class="skills-fila-med">
+                        <div class="skills-fila-med-img">
+                            <img src="img/Java-icono.png" alt="">
+                        </div>
+            
+                        <div class="skills-fila-med-text">
+                            <h3>Java</h3>
+                        </div>
+                    </div>
+
+                    <div class="skills-fila-der">
+                        <div class="skills-fila-der-img">
+                            <img src="img/Access-icono.png" alt="">
+                        </div>
+            
+                        <div class="skills-fila-der-text">
+                            <h3>Access</h3>
+                        </div>
                     </div>
                 </div>
+                <!-- Fin Fila 2-->            
 
-                <div class="skills-fila-der">
-                    <div class="skills-fila-der-img">
-                        <img src="img/Access-icono.png" alt="">
-                    </div>
-        
-                    <div class="skills-fila-der-text">
-                        <h3>Access</h3>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin Fila 2-->            
-
-        </div>
-    </section>
-    <!-- Fin del Section-Habilidades -->
-
-
-    <!-- Inicio del Section-Services -->
-    <section class="services" id="services">
-        <h1>Mis Servicios</h1>
-        <section class="container-3">
-            <div class="service-1">
-                <h2>Diseñadora Web Junior</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem tempore amet, obcaecati voluptatibus numquam sint libero blanditiis non aut provident suscipit aspernatur assumenda, inventore aperiam nulla eligendi! Alias, corrupti.</p>
             </div>
         </section>
-    </section>
-    <!-- Fin del Section-Services -->
+        <!-- Fin del Section-Habilidades -->
 
 
-    <!-- Inicio del Section-Projects -->
-    <section class="projects" id="projects">
-        <h1>Proyectos</h1>
-        <h2>Que he hecho</h2>
-        <section class="cont-projects">
-            <div class="project-1">
-                <img src="img/Proyecto-1.jpg" alt="">
-                <h1>Formulario de inicio</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rem atque, fugiat obcaecati omnis laborum cum accusantium voluptates ipsa distinctio! Totam dicta porro ab, soluta quod amet aliquid eius atque.</p>
-            </div>
-
-            <div class="project-2">
-                <img src="img/Proyecto-2.jpg" alt="">
-                <h1>Servicios</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque enim dolorem sed nostrum sunt ducimus exercitationem inventore eligendi, magni similique alias repudiandae iure, architecto, quae excepturi molestiae! Velit, magnam dolor!</p>
-            </div>
+        <!-- Inicio del Section-Services -->
+        <section class="services" id="services">
+            <h1>Servicios</h1>
+            <h2>Que ofrezco</h2>
+            <section class="container-3">
+                <div class="service-1">
+                    <h2>Diseñadora Web Junior</h2>
+                    <p>Utilizo mis conocimientos en varios lenguajes de programacion como HTML5, CSS, JAVA, PYTHON para crear soluciones digitales para los usuarios. Actualmente me estoy formando en Desarrollo Full-Stack.</p>
+                </div>
+            </section>
         </section>
+        <!-- Fin del Section-Services -->
+
+
+        <!-- Inicio del Section-Projects -->
+        <section class="projects" id="projects">
+            <h1>Proyectos</h1>
+            <h2>Que he hecho</h2>
+            <section class="cont-projects">
+                <div class="project-1">
+                    <img src="img/Proyecto-1.jpg" alt="">
+                    <h1>Formulario de inicio</h1>
+                    <p>Diseñe un formulario de inicio de sesion, con sus respectivas secciones: "Email", "Contraseña", "Boton de Inicio" y la posibilidad de "Registrarse" en caso de que el usuario no tenga una cuenta.</p>
+                </div>
+
+                <div class="project-2">
+                    <img src="img/Proyecto-2.jpg" alt="">
+                    <h1>Servicios</h1>
+                    <p>En esta ocasion, elabore una imagen describiendo los servicios que ofrece una empresa.</p>
+                </div>
+            </section>
+            
+            <button class="expand">Ver mas</button>
+        </section>
+        <!-- Fin del Section-Projects -->
+
+
+        <!-- Inicio del Section-Contact -->
+        <section class="contact" id="contact">
+            <h1>Contacto</h1>
+            <h2>Ponete en Contacto</h2>
+            <p>@abril.funez@gmail.com</p>
+
+            <form class="form"> 
+                <section class="sec-1">
+                    <div class="name">
+                        <input type="text" required placeholder="Tu Nombre">
+                    </div>
         
-        <button class="expand">Ver mas</button>
-    </section>
-    <!-- Fin del Section-Projects -->
+                    <div class="email">
+                        <input type="text" placeholder="Tu Email" required>
+                    </div>
+                </section>
 
+                <section class="sec-2">
+                    <div class="msg">
+                        <textarea name="" id="" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                </section>
+                <button class="send">Enviar</button>
+            </form>
+        </section>
+        <!-- Fin del Section-Contact -->
+    </main>
 
-    <!-- Inicio del Section-Contact -->
-    <section class="contact" id="contact">
-        <h1>Contacto</h1>
-        <h2>Ponete en Contacto</h2>
-        <p>@abril.funez@gmail.com</p>
+    <footer>
+        <img src="img/Logo.jpg" alt="" class="logo-f">
 
-        <form class="form"> 
-            <div class="name">
-                <label>Tu Nombre</label>
-                <input type="text" required>
-            </div>
+        <nav class="menu-f">
+            <a href="#inicio">Inicio</a>
+            <a href="#about">Acerca de mi</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#services">Servicios</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
 
-            <div class="email">
-                <label>Tu Email</label>
-                <input type="text" required>
-            </div>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
 
-            <div class="msg">
-                <label>Tu Mensaje</label>
-                <input type="text">
-            </div>
-            <button>Send</button>
-        </form>
-    </section>
-    <!-- Fin del Section-Contact -->
-
+    <script src="js/app.js"></script>
 </body>
 </html>
