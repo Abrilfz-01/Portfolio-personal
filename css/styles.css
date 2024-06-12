@@ -8,35 +8,46 @@
     --color-2: #D9A0AF;
     --color-3: #575757;
     --color-4: #FFF1F4;
+    --color-5: white;
 }
 
 /* Inicio del diseño de la barra de navegacion */
-header{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1.5px solid silver ;
-    background-color: white;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-header .logo{
+header{
+    position: fixed;    
+    width: 100%;
+    height: 95px;
+    border-bottom: 1.5px solid silver ;
+    background-color: var(--color-5);
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 0;
+}
+.logo{
     width: 50px;
     height: 55px;
-    margin-right: 200px;
 }
 
-#menu-icon{
-    font-size: 35px;
-    color: var(--color-3);
-    cursor: pointer;
-    display: none;
+header ul{
+    float: right;
 }
 
-header a{
+header ul li{
+    display: inline-block;
+    line-height: 95px;
+    margin-right: 10px;
+}
+
+header ul li a{
     margin-left: 23px;
     text-decoration: none;
     font-family: var(--font-1);
@@ -45,7 +56,7 @@ header a{
     position: relative;
 }
 
-header a:after{
+li a:after{
     content: '';
     position: absolute;
     width: 0;
@@ -57,16 +68,29 @@ header a:after{
     will-change: width;
 }
 
-header a:hover:after{
+li a:hover:after{
     width: 100%;
     right: 0;
 }
 
-header .menu #inicio{
+header .menu #active{
     margin-left: 240px;
 }
 
-header .menu button{
+.checkbtn{
+    font-size: 35px;
+    float: right;
+    line-height: 95px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+header .menu .contactme{
     background: var(--color-1);
     border: 1px;
     color: white;
@@ -75,11 +99,11 @@ header .menu button{
     padding: 10px 30px;
     border-radius: 5px;
     margin-left: 40px;
-    margin-right: 20px;
+    margin-right: 50px;
     transition: background-color 1s, color 1s;
 }
 
-header .menu button:hover{
+header .menu .contactme:hover{
     background-color: var(--color-2);
     color: var(--color-1);
     cursor: pointer;
@@ -101,6 +125,7 @@ header .menu button:hover{
     font-size: 60px;
     font-weight: 480;
     margin-bottom: 0px;
+    margin-top: 80px;
 }
 
 .container-1 h1{
@@ -156,7 +181,7 @@ header .menu button:hover{
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    scroll-margin-top: 92px;
+    scroll-margin-top: 95px;
 }
 
 .about .titulo1{
@@ -174,6 +199,7 @@ header .menu button:hover{
 }
 
 .about .info{
+    text-align: justify;
     width: 80%;
     font-family: var(--font-1);
     color: black;
@@ -186,7 +212,8 @@ header .menu button:hover{
 
 /* Inicio del diseño de la seccion 'skills' */
 .skills{
-    scroll-margin-top: 92px;
+    scroll-margin-top: 95px;
+    padding-bottom: 60px;
 }
 
 .skills h1{
@@ -250,7 +277,7 @@ header .menu button:hover{
 /* Inicio del diseño de la seccion 'services' */
 .services{
     background-color: var(--color-4);
-    scroll-margin-top: 92px;
+    scroll-margin-top: 95px;
 }
 
 .services h1{
@@ -280,7 +307,7 @@ header .menu button:hover{
 
 .container-3 .service-1{
     margin-left: 470px;
-    width: 250px;
+    width: 300px;
     padding: 10px 30px;
     background-color: white;
     box-shadow: 0 0 15px 0 var(--color-2);
@@ -290,19 +317,23 @@ header .menu button:hover{
 .container-3 .service-1 h2{
     font-family: var(--font-1);
     font-size: 23px;
+    margin-bottom: 20px;
+    padding-top: 10px;
 }
 
 .container-3 .service-1 p{
     font-family: var(--font-1);
     color: var(--color-3);
     font-size: 18px;
+    padding-bottom: 20px;
 }
 /* Fin del diseño de la seccion 'services' */
 
 
 /* Inicio del diseño de la seccion 'projects' */
 .projects{
-    scroll-margin-top: 92px;
+    scroll-margin-top: 95px;
+    padding-top: 60px;
 }
 
 .projects h1{
@@ -312,7 +343,6 @@ header .menu button:hover{
     font-family: var(--font-1);
     font-size: 18px;
     font-weight: 450;
-    margin-top: 60px;
     margin-bottom: 10px;
 }
 
@@ -338,11 +368,12 @@ header .menu button:hover{
     background-color: white;
     box-shadow: 0 0 15px 0 var(--color-2);
     border-radius: 5px;
+    padding-bottom: 25px;
 }
 
 .cont-projects .project-1 img{
     margin-top: 15px;
-    width: 500px;
+    width: 440px;
     height: 250px;
 }
 
@@ -355,7 +386,7 @@ header .menu button:hover{
 
 .cont-projects .project-1 p{
     font-family: var(--font-1);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 450;
 }
 
@@ -370,7 +401,7 @@ header .menu button:hover{
 
 .cont-projects .project-2 img{
     margin-top: 15px;
-    width: 500px;
+    width: 440px;
     height: 250px;
 }
 
@@ -383,7 +414,7 @@ header .menu button:hover{
 
 .cont-projects .project-2 p{
     font-family: var(--font-1);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 450;
 }
 
@@ -414,9 +445,9 @@ header .menu button:hover{
 /* Inicio del diseño de la seccion 'contact' */
 .contact{
     background-color: var(--color-4);
-    padding-top: 40px;
+    padding-top: 60px;
     text-align: center;
-    scroll-margin-top: 92px;
+    scroll-margin-top: 95px;
 }
 
 .contact h1{
@@ -443,31 +474,30 @@ header .menu button:hover{
     margin-bottom: 50px;
 }
 
-
 .form .sec-1{
     display: flex;
     margin-left: 214px;
     font-family: var(--font-1);
-
 }
 
 .form .sec-1 .name{
-    margin-right: 190px;
+    margin-right: 120px;
 }
 
 .form .sec-1 .name input{
     font-size: 18px;
     height: 40px;
-    width: 180%;
+    width: 130%;
     padding-left: 15px;
     border: 1.5px solid var(--color-1);
     border-radius: 3px;
+    margin-left: 10px;
 }
 
 .form .sec-1 .email input{
     font-size: 18px;
     height: 40px;
-    width: 210%;
+    width: 165%;
     padding-left: 15px;
     border: 1.5px solid var(--color-1);
     border-radius: 3px;
@@ -578,8 +608,8 @@ footer .redes i{
 }
 
 footer .redes .fa-facebook-f{
-    height: 12px;
-    padding: 17.5px 19px;
+    padding-left: 19px ;
+    padding-right: 19px;
 }
 
 .fa-facebook-f:hover{

@@ -12,21 +12,30 @@
 <body>
     <!-- Inicio del Header -->
     <header>
-        <img src="img/Logo.jpg" alt="" class="logo">
-        <i class="bi bi-list" id="menu-icon" onclick="responsiveMenu"></i>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
 
-        <nav class="menu">
-            <a href="#inicio">Inicio</a>
-            <a href="#about">Acerca de mi</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#services">Servicios</a>
-            <a href="#projects">Proyectos</a>
-            <a href="#contact">Contacto</a>
+        <a href="#" class="enlace">
+            <img src="img/Logo.jpg" alt="" class="logo">
+        </a>
+
+
+        <ul class="menu">
+            <li><a href="#active">Inicio</a></li>
+            <li><a href="#about">Acerca de mi</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
             <button class="contactme">Hablemos</button>
-        </nav>
+        </ul>
     </header>
     <!-- Fin del Header -->
 
+
+    <!-- Inicio del Main-->
     <main>
         <!-- Inicio del Section-Inicio -->
         <section class="inicio" id="inicio">
@@ -197,7 +206,10 @@
         </section>
         <!-- Fin del Section-Contact -->
     </main>
+    <!-- Fin del Main-->
 
+
+    <!-- Inicio del Footer-->
     <footer>
         <img src="img/Logo.jpg" alt="" class="logo-f">
 
@@ -217,7 +229,7 @@
             <a href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
+    <!-- Fin del Footer-->
 
-    <script src="js/app.js"></script>
 </body>
 </html>
