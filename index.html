@@ -23,13 +23,15 @@
 
 
         <ul class="menu">
-            <li><a href="#active">Inicio</a></li>
+            <li><a href="#inicio">Inicio</a></li>
             <li><a href="#about">Acerca de mi</a></li>
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#contact">Contacto</a></li>
-            <button class="contactme">Hablemos</button>
+            <li>
+              <a class="contactme" href="#contact">Hablemos</a>
+            </li>
         </ul>
     </header>
     <!-- Fin del Header -->
@@ -40,12 +42,10 @@
         <!-- Inicio del Section-Inicio -->
         <section class="inicio" id="inicio">
             <div class="container-1">
-                <h2>Hola! Yo soy</h2>
                 <h1>Abril Funez</h1>
-                <p>Hola, soy Abril 👋
-                    Estudiante de Ingeniería en Sistemas y desarrolladora web.
-                    
-                    Me gusta crear aplicaciones web y aprender nuevas tecnologías.</p>
+                <h2>Frontend Developer</h2>
+                <p>Estudiante de Ingeniería en Sistemas.  
+                    Me apasiona crear aplicaciones web modernas y seguir aprendiendo nuevas tecnologías..</p>
                 <button class="download">Descargar CV</button>
             </div>
             
@@ -60,8 +60,13 @@
             <p class="titulo1">Acerca de</p>
             <h1>Quien soy</h1>
 
-            <p class="info">Me llamo Abril, soy de San Luis-Capital, me mude a Cordoba hace 4 años por cuestiones de estudio, actualmente estudio la carrera de Ing. en Sistemas en la UTN-FRC, en la cual ingrese hace 2 años. Ademas, como especifique en el inicio, tengo un emprendimiento de accesorios(artesanias) de hilo encerado, el cual lo vengo desempeñando hace 4 años.<br>
-            Me gusta el crecimiento personal, lo cual busco constantemente aprender cosas nuevas. Me egrese del colegio con "Bachiller en Informatica", hice un curso de "Fundamentos de Prog. y Bases de Datos". <br> Por otro lado, fuera del ambiente de la Informatica, hice tambien un curso de "Barberia y Peluqueria Masc.".</p>
+            <p class="info">
+                Soy estudiante de Ingeniería en Sistemas en la UTN-FRC.
+                Me interesa el desarrollo web y disfruto crear interfaces modernas y funcionales.
+                
+                Actualmente sigo aprendiendo nuevas tecnologías y desarrollando proyectos
+                para mejorar mis habilidades como desarrolladora.
+            </p>
 
         </section>
         <!-- Fin del Section-Acerca de mi -->
@@ -164,16 +169,26 @@
             <h1>Proyectos</h1>
             <h2>Que he hecho</h2>
             <section class="cont-projects">
-                <div class="project-1">
-                    <img src="img/Proyecto-1.jpg" alt="">
-                    <h1>Formulario de inicio</h1>
-                    <p>Diseñe un formulario de inicio de sesion, con sus respectivas secciones: "Email", "Contraseña", "Boton de Inicio" y la posibilidad de "Registrarse" en caso de que el usuario no tenga una cuenta.</p>
+                <div class="project">
+                   <img src="img/proyecto1.jpg">
+                
+                   <h3>Formulario Login</h3>
+                
+                   <p>Formulario de inicio de sesión responsive.</p>
+                
+                   <a href="#">Ver proyecto</a>
+                   <a href="#">Código</a>
                 </div>
 
                 <div class="project-2">
-                    <img src="img/Proyecto-2.jpg" alt="">
-                    <h1>Servicios</h1>
+                    <img src="img/Proyecto-2.jpg">
+                    
+                    <h3>Servicios</h3>
+                    
                     <p>En esta ocasion, elabore una imagen describiendo los servicios que ofrece una empresa.</p>
+
+                    <a href="#">Ver proyecto</a>
+                    <a href="#">Código</a>
                 </div>
             </section>
             
@@ -186,7 +201,9 @@
         <section class="contact" id="contact">
             <h1>Contacto</h1>
             <h2>Ponete en Contacto</h2>
-            <p>@abril.funez@gmail.com</p>
+            <a href="mailto:abril.funez@gmail.com">
+                abril.funez@gmail.com
+            </a>
 
             <form class="form"> 
                 <section class="sec-1">
